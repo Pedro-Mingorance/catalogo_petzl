@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winform_app", "winform_app\winform_app.csproj", "{0ED01C22-B342-41EA-B1A5-77BED6B33D7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negocio", "negocio\negocio.csproj", "{20FBBA34-83E1-4868-A280-4B881CB37CC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "dominio\dominio.csproj", "{E8E840B4-FEFD-44D4-B210-3EB71C895061}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ED01C22-B342-41EA-B1A5-77BED6B33D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED01C22-B342-41EA-B1A5-77BED6B33D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED01C22-B342-41EA-B1A5-77BED6B33D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED01C22-B342-41EA-B1A5-77BED6B33D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20FBBA34-83E1-4868-A280-4B881CB37CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20FBBA34-83E1-4868-A280-4B881CB37CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20FBBA34-83E1-4868-A280-4B881CB37CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20FBBA34-83E1-4868-A280-4B881CB37CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8E840B4-FEFD-44D4-B210-3EB71C895061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E840B4-FEFD-44D4-B210-3EB71C895061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E840B4-FEFD-44D4-B210-3EB71C895061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E840B4-FEFD-44D4-B210-3EB71C895061}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CCDE4AE-E38B-4207-9F6E-1E0AE409B8CA}
+	EndGlobalSection
+EndGlobal
