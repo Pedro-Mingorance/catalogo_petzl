@@ -25,13 +25,13 @@ namespace winform_app
             //lwElementos.Items.Add(elem);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            cboUsoRecomendado.Items.Add("Alpinismo");
-            cboUsoRecomendado.Items.Add("Esqui");
-            cboUsoRecomendado.Items.Add("Espeleología");
-            cboUsoRecomendado.Items.Add("Descenso de barrancos");
-        }
+        //private void Form1_Load(object sender, EventArgs e)
+        //{
+        //    cboUsoRecomendado.Items.Add("Alpinismo");
+        //    cboUsoRecomendado.Items.Add("Esqui");
+        //    cboUsoRecomendado.Items.Add("Espeleología");
+        //    cboUsoRecomendado.Items.Add("Descenso de barrancos");
+        //}
 
         private void btnDatos_Click(object sender, EventArgs e)
         {
@@ -69,18 +69,18 @@ namespace winform_app
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             Arnes arnes = new Arnes();
-            ArnesNegocio arnesNegocio = new ArnesNegocio();
+            ArnesNegocio negocio = new ArnesNegocio();
 
             try
             {
                 arnes.NombreArnes = txtNombreArnes.Text;
-                arnes.FechaFabricacion = DateTime.Parse(dtpFechaFabricacion.CustomFormat);
+                //arnes.FechaFabricacion = DateTime.Parse(dtpFechaFabricacion.CustomFormat);
                 arnes.TipoUsuario = int.Parse(txtTipoUsuario.Text);
-                arnes.UrlImagen = txtUrlImagen.Text;
-                //arnes.UsoRecomendado = cboUsoRecomendado.
-                //arnes.UsoNoRecomendado = cboUsoNoRecomendado.
+                //arnes.UrlImagen = txtUrlImagen.Text;
+                //arnes.UsoRecomendado = (Uso)cboUsoRecomendado.SelectedItem;
+                //arnes.UsoNoRecomendado = (Uso)cboUsoNoRecomendado.SelectedItem;
 
-                arnesNegocio.agregar(arnes);
+                negocio.agregar(arnes);
                 MessageBox.Show("Agregado correctamente");
                 Close();
             }
@@ -90,5 +90,22 @@ namespace winform_app
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void frmEscrituraArneses_Load(object sender, EventArgs e)
+        {
+            UsoNegocio usoNegocio = new UsoNegocio();
+            {
+                try
+                {
+                    cboUsoRecomendado.DataSource = usoNegocio.listar();
+                    cboUsoNoRecomendado.DataSource = usoNegocio.listar();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
+        }
+
     }
 }

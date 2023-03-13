@@ -58,7 +58,7 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("Insert into ARNESES (NombreArnes, FechaFabricacion, TipoUsuario, UrlImagen, UsoRecomendado, UsoNoRecomendado)values(" + nuevo.NombreArnes + ", '" + nuevo.FechaFabricacion + "', '" + nuevo.TipoUsuario + "', '" + nuevo.UrlImagen + "', '" + nuevo.UsoRecomendado + "', '" + nuevo.UsoNoRecomendado + "')");
+                datos.setearConsulta("Insert into ARNESES (NombreArnes, TipoUsuario, UsoRecomendado, UsoNoRecomendado)values('" + nuevo.NombreArnes + "', '" + nuevo.TipoUsuario + "', '" + nuevo.UsoRecomendado + "', '" + nuevo.UsoNoRecomendado + "')");
                 datos.ejecutarAccion();
             }
             catch (Exception ex)

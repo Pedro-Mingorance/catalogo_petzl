@@ -24,6 +24,8 @@ namespace negocio
                     Uso aux = new Uso();
                     aux.Id = (int)datos.Lector["Id"];
                     aux.Descripcion = (string)datos.Lector["IdTipoUso"];
+
+                    lista.Add(aux);
                 }
 
                 return lista;

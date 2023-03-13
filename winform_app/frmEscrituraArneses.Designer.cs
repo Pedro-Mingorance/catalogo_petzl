@@ -65,6 +65,7 @@ namespace winform_app
             // 
             // btnCancelar
             // 
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar.Location = new System.Drawing.Point(763, 415);
             this.btnCancelar.Name = "btnCancelar";
@@ -131,6 +132,7 @@ namespace winform_app
             // 
             // cboUsoRecomendado
             // 
+            this.cboUsoRecomendado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboUsoRecomendado.FormattingEnabled = true;
             this.cboUsoRecomendado.Location = new System.Drawing.Point(328, 182);
             this.cboUsoRecomendado.Name = "cboUsoRecomendado";
@@ -203,6 +205,7 @@ namespace winform_app
             // 
             // cboUsoNoRecomendado
             // 
+            this.cboUsoNoRecomendado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboUsoNoRecomendado.FormattingEnabled = true;
             this.cboUsoNoRecomendado.Location = new System.Drawing.Point(328, 209);
             this.cboUsoNoRecomendado.Name = "cboUsoNoRecomendado";
@@ -264,6 +267,7 @@ namespace winform_app
             this.Name = "frmEscrituraArneses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEscrituraArneses";
+            this.Load += new System.EventHandler(this.frmEscrituraArneses_Load);
             this.gbtTipoUsuario.ResumeLayout(false);
             this.gbtTipoUsuario.PerformLayout();
             this.ResumeLayout(false);
